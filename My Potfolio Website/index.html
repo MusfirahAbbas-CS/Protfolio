@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADAMS` Portfolio</title>
+    <script src="https://kit.fontawesome.com/63adc93c9f.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        background: black;
+    }
+    #header{
+        width:90%;
+        height:100vh;
+        background-image: url(new2adam.png);
+        background-size: cover;
+        background-position: center;    }
+    img{
+        
+        width: 15%;
+        height: 89px;
+    }
+    .container{
+        padding: 10px 10%;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+   nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 5px 10px;
+   }
+   nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+   }
+    p{
+    text-align: left;
+    font-size: large;
+    color:  aliceblue;
+  }
+  h1{
+    text-align: left;
+    color: aliceblue;
+  } 
+  .header-text{
+    margin-left: 25%;
+    margin-top:15%;
+    font-size: 30px;
+
+  }
+  /* /* -----------------Portfolio----------------- * */
+
+  
+        .Container {
+            display: flex;
+            gap: 70px;
+            justify-content: center;
+            margin-bottom: 0px;
+        } 
+
+        .rectangle {
+            width: 200px;
+            height: 300px;
+            background: #faf8f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+            margin-bottom: 40px;
+        }   
+
+        body {
+       
+            margin: 0;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .header {
+            text-align: left;
+            color: whitesmoke;
+            
+            padding: 20px;
+        }
+/* ---------------Blog------------ */
+
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    color: white;
+}
+
+/* Header */
+header h1 {
+    text-align: center ;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;  /* Header */
+        /* header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 2rem 0;
+        } */
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Blog Container */
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Blog Post Card */
+.blog-post {
+    background-color: #1c1c1c; /* Darker background for the card */
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 80%;
+    max-width: 600px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Blog Post Hover Effect */
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.blog-post h2 {
+    font-size: 1.8rem;
+    color: #e0e0e0;
+}
+
+.blog-post .date {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-bottom: 1rem;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 1rem;
+}
+
+.blog-post .read-more {
+    display: inline-block;
+    color: rgb(163, 39, 39);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.blog-post .read-more:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+  
+
+/* --------------------------Aboutme------------------------------ */
+.about{
+       padding: 100px 0;
+       color: #ababab;
+   }
+   .row
+   {
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+   }
+   .about-col-1{
+       flex-basis: 35%;
+   }
+   .about-col-1 img{
+       width: 100%;
+       height: 95%;
+       border-radius: 15px;
+   }
+   .about-col-2{
+       flex-basis: 61%;
+   }
+   p{
+       font-size: 20px;
+       line-height: 1.3;
+       margin-bottom: 25px;
+       margin-right: 70px;
+       text-align: justify;
+   }
+   .sub-title{
+       font-size: 60px;
+       font-weight: 600;
+       color: #fff;    
+   }
+   .tab-titles{
+       display: flex;
+       margin: 20px 0 40px;
+   }
+   .tab-links{
+       margin-right: 50px;
+       font-size: 18px;
+       font-weight: 500;
+       cursor: pointer;
+       position: relative;
+   }
+   .tab-links::after{
+       content: '';
+       width: 0;
+       height: 3px;
+       background: #ff004f;
+       position: absolute;
+       left: 0;
+       bottom: -8px;
+       transition: 0.5s;
+   }
+   .tab-links.active-link::after{
+       width: 100%;
+   }
+   .tab-contents ul li{
+       list-style-type: none;
+       margin: 15px 0;
+   
+   }
+   .tab-contents ul li span{
+       color: #ff004f;
+       font-size: 17px;
+      
+   }
+   .tab-contents{
+       display: none;
+
+   }
+   .tab-contents.active-tab{
+       display: block;
+   } 
+/* -----------------------------skils-------------------------------- */
+body {
+                background-color: #000;
+                color: whitesmoke;
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* Center Content Styling */
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+    
+            /* Header and Title Styling */
+            h1, h2 {
+                color: #fff;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+    
+            /* Flexbox Layout for Sections */
+            .flex-row {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+    
+            /* Column Styling for Skills and Resume */
+            .column {
+                flex: 1;
+                min-width: 300px;
+                background-color: #1c1c1c;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+    
+            /* Two-Column Layout for Lists */
+            .two-column-list {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+    
+            /* Individual List Item Styling */
+            .two-column-list li {
+                background-color: #333;
+                border-radius: 8px;
+                padding: 15px;
+                transition: background-color 0.3s;
+            }
+    
+            /* Hover Effect */
+            .two-column-list li:hover {
+                background-color: #2d2b33;
+            }
+    
+            /* Sub-list Styling */
+            .two-column-list ul {
+                list-style-type: disc;
+                padding-left: 20px;
+                margin-top: 10px;
+            }
+    
+            /* Link Styling */
+            a {
+                color:  rgb(163, 39, 39);
+                text-decoration: none;
+            }
+    
+            a:hover {
+                text-decoration: underline;
+            }
+            .portfolio-section {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+        .portfolio-item {
+            background: #faf8f8;
+            color: #333;
+            width: 250px;
+            height: 350px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .portfolio-item h3 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .portfolio-item p {
+            font-size: 14px;
+            color: grey;
+        }
+        .header {
+            justify-content: left;
+            color: whitesmoke;
+            background-color: black;
+            padding: 20px;
+        }
+       
+
+ /* --------------contact----------------- */
+.contact-left{
+    flex-basis: 55%;
+ }
+.contact-right{
+    flex-basis: 60%;
+ }
+.contact-left p{
+    
+    font-size: 140%;
+    margin-top: 3%;
+ }.contact-left h1 i{
+    color:rgb(163, 39, 39);
+ }
+.contact-left p i{
+    color: rgb(163, 39, 39);
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+
+}
+.social-icons a{
+    color: rgb(163, 39, 39);
+    text-decoration: none;
+    font-size: 35px;
+    margin-right: 15px;
+}
+ .contact-right form{
+    
+    width: 100%;
+ }
+ form input, form textarea{
+
+    width: 100%;
+    border:0;
+    outline:none;
+    padding: 15px;
+    margin: 20px 0;
+    background: rgb(30, 27, 27);
+    color:white;
+ }
+form btn2{
+    padding:14px 60px;
+    font-size: px;
+    margin-top:20px;
+    cursor: pointer;
+}
+
+
+.copyright{
+    width:100%;
+    text-align: center;
+    padding:2px 0;
+    background:  rgb(30, 27, 27);
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+
+    </style>
+</head>
+ 
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="new2logohtml.png" class="logo">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#skills">Skills</a> </li>
+                <li><a href="#portfolio">Portfolio</a> </li>  
+                <li> <a href="#blog">Blog</a></li>
+                <li> <a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text" style="font-weight: 100;">
+            
+                <pre style="color: rgb(163, 39, 39)">
+                    <p style="font-size: 160%;" >Hi, I am Adams!</p>
+        
+                </pre>
+            
+        </div>
+    </div>
+
+</div>
+<!-- -----------------------About us------------------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> 
+                    <img src="2ndadamspic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><i  style="color: rgb(163, 39, 39)" class="fa-regular fa-address-card"></i>About Me</h1>
+                    <p>With 5 years of experience in digital marketing, I specialize in creating comprehensive strategies that increase brand awareness, engagement, and conversions. My approach combines analytical insight with creative innovation, ensuring every campaign is data-driven and goal-oriented.</p>                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link">Skills</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Social Media Marketing</span><br>Growing brand presence onlline effectively</li>
+                            <li><span>Sales Management</span><br>Driving revenue through strategic sales</li>
+                            <li><span>Email Marketing</span><br>Creating impactful,engaging email campaigns</li>
+                        </ul>
+                    </div>
+          
+                   
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- --------------------blog------------------- -->
+<div id="blog">
+
+    <header>
+        <h1><i style="color: rgb(163, 39, 39)" class="fa-solid fa-blog"></i>Adam's Digital Marketing Blog</h1>
+    </header>
+
+    <main class="blog-container">
+        <article class="blog-post">
+            <h2>How to Boost Your Brand's Online Presence</h2>
+            <p class="date">Published on October 20, 2024</p>
+            <p>Boosting your brand's online presence is essential in today's digital world. In this post, we explore practical tips to help you engage your audience and stand out online.</p>
+            <a href="#" class="read-more">Read More</a>
+        </article>
+        
+        <article class="blog-post">
+            <h2>Top SEO Strategies for 2024</h2>
+            <p class="date">Published on October 15, 2024</p>
+            <p>With SEO evolving constantly, here are the strategies that will make a difference in 2024, from on-page optimizations to content strategy.</p>
+            <a href="#" class="read-more">Read More</a>
+        </article>
+
+        <article class="blog-post">
+            <h2>Leveraging Social Media for Business Growth</h2>
+            <p class="date">Published on September 30, 2024</p>
+            <p>Learn how to create an impactful social media strategy to grow your business and engage with your customers across various platforms.</p>
+            <a href="#" class="read-more">Read More</a>
+        </article>
+
+    </main>
+</div>
+<!-- -------------------------portfolio------------------------ -->
+<div id="portfolio">
+<header class="header">
+    <h1 style="color: rgb(163, 39, 39)"><b><i  style="color: rgb(163, 39, 39)" class="fa-solid fa-briefcase"></i>Portfolio Page</b></h1>
+</header>
+<center>
+<h1 style="color: whitesmoke;"><b>My projects</b></h1>
+</center>
+<div class="container">
+    <div class="portfolio-section">
+        <div class="portfolio-item">
+            <img src="pic1ayesha.png" alt="Event Management">
+            <h3>Email Drip Campaign for Customer Retention</h3>
+            <p>Improved retention with targeted email automation</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="pic2ayesha.jpg" alt="Portfolio Website">
+            <h3>Social Media Campaign for Product Launch</h3>
+            <p>Drove engagement with a multi-platform campaign</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="pic3ayesha.jpg" alt="E-commerce Site">
+            <h3>SEO Optimization for E-commerce Site</h3>
+            <p>Boosted rankings and traffic through SEO improvements</p>
+        </div>
+    </div>
+    <center><a href="view all"  style="color: rgb(163, 39, 39)" font-size: 20px;">view all</a></center>
+</div>
+</div>
+
+<!-- ---------------------------skills--------------------------------- -->
+<div id="skills">
+<div class="container flex-row">
+    <div class="column">
+        <header>
+            <h2 style="color: rgb(163, 39, 39)"><i style="color: rgb(163, 39, 39)"  class="fa-regular fa-square-check"></i>Skills</h2>
+        </header>
+        <ul class="two-column-list">
+            <li>
+                <strong>Digital Marketing:</strong> Experienced in crafting and executing digital marketing strategies to increase online visibility and engagement.
+                <ul>
+                    <li><strong>SEO:</strong> Skilled in keyword research, on-page and off-page SEO, and content optimization to improve organic search rankings.</li>
+                    <li><strong>Social Media:</strong> Proficient in developing campaigns across platforms like Facebook, Instagram, and LinkedIn to build brand awareness.</li>
+                    <li><strong>Email Marketing:</strong> Experienced in designing email campaigns using tools like Mailchimp, focusing on segmentation and A/B testing.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Social Media Marketing:</strong>
+                <ul>
+                    <li>Proficient in managing social media on platforms including Facebook, Instagram, and LinkedIn.</li>
+                    <li>Executed ad campaigns, increasing engagement and conversion rates by over 30%.</li>
+                    <li>Skilled in community engagement and leveraging insights to enhance brand visibility.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Resume Section -->
+<div class="container flex-row">
+    <div class="column">
+        <header>
+            <h2 style="color: rgb(163, 39, 39)"><i style="color: rgb(163, 39, 39)"class="fa-regular fa-file"></i>Resume</h2>
+        </header>
+        <ul class="two-column-list">
+            <li>
+                <strong>Global Resource Manager at Willingjet Life Science Limited (2020 - Present)</strong>
+                <ul>
+                    <li>Managing cross-functional teams, sourcing, and logistics.</li>
+                    <li>Implemented strategies reducing project costs by 15% and improving productivity.</li>
+                    <li>Enhanced supplier quality, reducing supply chain disruptions by 20%.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Sourcing Specialist at RWS (2018 - 2020)</strong>
+                <ul>
+                    <li>Handled global sourcing, vendor relations, and contract negotiations.</li>
+                    <li>Managed supplier network ensuring quality standards and optimal pricing.</li>
+                    <li>Streamlined procurement processes, reducing acquisition time by 20%.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Download Resume Link -->
+<div class="container">
+    <p style="text-align: center;"><a href="resume.pdf" download>Download Resume (PDF)</a></p>
+</div>
+</div>
+
+
+
+
+ <!-- ----------------------contact------------------    -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+
+               <center><h1 style="font-size: 47px;" ><i class="fa-regular fa-address-book"></i>Contact Me</h1>
+               </center>               
+                 <p><i class="fa-regular fa-paper-plane"></i>adamsklein@gmail.com</p>
+                <p><i  class="fa-solid fa-phone"></i>03341234334</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                   
+                    <a href="https://www.twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+               
+            </div>
+            <div class="contact-right">
+
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+            <!-- <a  href="#" class="btn btn2">Download CV</a> -->
+
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p style="text-align: center;">copyright Made by Group C with hardwork<i style="color:  rgb(163, 39, 39)" class="fa-solid fa-book"></i></p>
+    </div>
+</div>
+</body>
+</html>
